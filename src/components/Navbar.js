@@ -11,16 +11,16 @@ export default function Navbar() {
                     <Link to="#" id="logo-container" className="brand-logo">logo</Link>
 
                     <ul className="right hide-on-med-and-down">
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/about-us">ABOUT</a></li>
-                        <li><a href="/contact">APPLY</a></li>
+                        <li><Link to="/">HOME</Link></li>
+                        <li><Link to="/about-us">ABOUT</Link></li>
+                        <li><Link to="/contact">APPLY</Link></li>
                     </ul>
                 </div>
 
                 <ul id="nav-mobile" className="sidenav">
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/about-us">ABOUT</a></li>
-                    <li><a href="/contact">APPLY</a></li>
+                    <li><Link to="/">HOME</Link></li>
+                    <li><Link to="/about-us">ABOUT</Link></li>
+                    <li><Link to="/contact">APPLY</Link></li>
                 </ul>
 
                 <Link to="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
