@@ -1,7 +1,4 @@
 import React from 'react'
-import bg1 from '../images/background1.jpg'
-import bg2 from '../images/background2.jpg'
-import bg3 from '../images/background3.jpg'
 import hands_people_woman_working from "../images/hands-people-woman-working.jpg"
 import lady_painting from '../images/lady_painting.jpeg' 
 import lady_on_pixel_dust from "../images/lady_on_pixel_dust.jpeg"

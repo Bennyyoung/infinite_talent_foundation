@@ -1,6 +1,4 @@
 import React from 'react'
-import bg1 from '../images/background1.jpg'
-import bg3 from '../images/background3.jpg'
 import lady_on_keyboard from "../images/lady_on_keyboard.jpg"
 import boy_with_violin from '../images/boy_with_violin.jpeg'
 
@@ -94,6 +92,7 @@ export default function Contact() {
                             <label for="interesting_fact">Unusual/Interesting facts about performance: </label>
                         </div>
                     </div>
+                    <button style={{backgroundColor: 'teal', color: 'white', padding: '10px', borderRadius: '5px'}} type="submit">Submit</button>
                 </form>
 
             </div>
@@ -169,9 +168,9 @@ export default function Contact() {
                         <i className="material-icons prefix" style={{ paddingTop: '2rem' }}>email</i><a href="mailto:infinitetalentfoundation@gmail.com" className="left-align light" style={{ color: 'black', paddingTop: '-2rem' }}>infinitetalentfoundation@gmail.com</a><br />
 
                     </div>
-                    <a className="left-align light" style={{ color: 'black' }}><i className="material-icons prefix">call</i>+44 7724 853 707</a><br />
-                    <a className="left-align light" style={{ color: 'black' }}><i className="material-icons">phone_in_talk</i>081 238 02150</a><br />
-                    <a className="left-align light" style={{ color: 'black' }}><i className="material-icons">home</i>202 ABA Express way PortHarcourt</a>
+                    <a href="#" className="left-align light" style={{ color: 'black' }}><i className="material-icons prefix">call</i>+44 7724 853 707</a><br />
+                    <a href="#" className="left-align light" style={{ color: 'black' }}><i className="material-icons">phone_in_talk</i>081 238 02150</a><br />
+                    <a href="#" className="left-align light" style={{ color: 'black' }}><i className="material-icons">home</i>202 ABA Express way PortHarcourt</a>
                 </div>
             </div>
         </>

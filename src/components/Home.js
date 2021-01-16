@@ -1,7 +1,4 @@
 import React from 'react'
-import bg1 from '../images/background1.jpg'
-import bg2 from '../images/background2.jpg'
-import bg3 from '../images/background3.jpg'
 import { Link } from 'react-router-dom'
 import light_bulb from '../images/light_bulb.jpg'
 import red_woman from "../images/red_woman.jpg"

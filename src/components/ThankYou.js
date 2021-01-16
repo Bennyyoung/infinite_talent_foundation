@@ -4,9 +4,9 @@ import { Link } from "react-router-dom"
 export default function ThankYou() {
     return (
         <>
-            <div id="index-banner" class="parallax-container">
+            <div id="index-banner" className="parallax-container">
                 <div className="section no-pad-bot">
-                    <div class="container">
+                    <div className="container">
                         <br /><br />
                         <h1 className="header center teal-text text-lighten-2">Infinite Talent Foundation</h1>
                         <div className="row center">
