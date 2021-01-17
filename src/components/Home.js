@@ -13,7 +13,7 @@ export default function Home() {
                 <div className="section no-pad-bot">
                     <div class="container">
                         <br /><br />
-                        <h1 className="header center teal-text text-lighten-2">Infinite Talent Foundation</h1>
+                        <h1 className="header center teal-text text-lighten-2">Infinite Talents Foundation</h1>
                         <div className="row center">
                             <h5 className="header col s12 light">Seeking Talents From Local Government Areas</h5>
                         </div>

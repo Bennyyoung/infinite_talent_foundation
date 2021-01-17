@@ -5,25 +5,26 @@ import "./Navbar.css"
 export default function Navbar() {
     return (
         <>
-        <div className="navbar-fixed">
+        <div>
             <nav className="white" role="navigation">
                 <div className="nav-wrapper container">
                     <Link to="#" id="logo-container" className="brand-logo">logo</Link>
 
                     <ul className="right hide-on-med-and-down">
-                        <li><Link to="/">HOME</Link></li>
-                        <li><Link to="/about-us">ABOUT</Link></li>
-                        <li><Link to="/contact">APPLY</Link></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about-us">ABOUT</a></li>
+                        <li><a href="/contact">APPLY</a></li>
                     </ul>
-                </div>
-
+                    
                 <ul id="nav-mobile" className="sidenav">
-                    <li><Link to="/">HOME</Link></li>
-                    <li><Link to="/about-us">ABOUT</Link></li>
-                    <li><Link to="/contact">APPLY</Link></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about-us">ABOUT</a></li>
+                    <li><a href="/contact">APPLY</a></li>
                 </ul>
 
                 <Link to="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
+                </div>
+
             </nav>
         </div>
         </>

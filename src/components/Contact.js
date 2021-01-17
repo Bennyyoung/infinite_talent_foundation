@@ -113,7 +113,7 @@ export default function Contact() {
                     <div className="row">
                         <div className="col s12 center">
                             <h3><i className="mdi-content-send brown-text"></i></h3>
-                            <h4>Infinite Talent Show Rules and Regulations</h4>
+                            <h4>Infinite Talents Show Rules and Regulations</h4>
                             <div className="left-align light">
                                 <p>1.	Presentations and acts will be allotted no more than ten (3) minutes to perform.  Acts will be penalized if time is exceeded. </p>
                                 <p>2.	Participants may only perform ONE time during the show. Any participant who participates in more than one performance will disqualify BOTH acts.</p>
