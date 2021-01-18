@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomeParallax}></Route>
-        <Route path="/about-us" component={AboutParallax}></Route>
-        <Route path="/contact" component={ContactParallax}></Route>
+        <Route exact path="/about-us" component={AboutParallax}></Route>
+        <Route exact path="/contact" component={ContactParallax}></Route>
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />

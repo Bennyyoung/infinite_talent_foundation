@@ -8,7 +8,7 @@ import M from "materialize-css"
 
 const HomeParallax = () => {
     useEffect(() => {
-        let elements = document.querySelector(".parallax");
+        let elements = document.querySelectorAll(".parallax");
         M.Parallax.init(elements)
     }, [])
 
