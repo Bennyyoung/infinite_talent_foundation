@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import hands_people_woman_working from "../images/hands-people-woman-working.jpg"
 import lady_painting from '../images/lady_painting.jpeg' 
 import lady_on_pixel_dust from "../images/lady_on_pixel_dust.jpeg"
+import M from "materialize-css"
 
-export default function About() {
+const AboutParallax = (() => {
+    useEffect(() => {
+        let elements = document.querySelectorAll('.parallax')
+        M.Parallax.init(elements)
+    }, [])
+    
     return (
         <>
             <div id="index-banner" class="parallax-container">
@@ -15,12 +21,12 @@ export default function About() {
                             <h5 className="header col s12 light">Here is who we are</h5>
                         </div>
                         <br /><br />
-
+    
                     </div>
                 </div>
                 <div className="parallax"><img src={hands_people_woman_working} alt="Unsplashed background img 1" /></div>
             </div>
-
+    
             <div className="container">
                 <div className="section">
                     <div className="row">
@@ -32,7 +38,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-
+    
             <div className="parallax-container valign-wrapper">
                 <div className="section no-pad-bot">
                     <div className="container">
@@ -43,9 +49,9 @@ export default function About() {
                 </div>
                 <div className="parallax"><img src={lady_painting} alt="Unsplashed background img 2" /></div>
             </div>
-
-
-
+    
+    
+    
             <div className="container">
                 <div className="section">
                     <div className="row">
@@ -53,39 +59,39 @@ export default function About() {
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">nature_people</i></h2>
                                 <h5 className="center">Diversity & Inclusion</h5>
-
+    
                                 <p className="light">Implementing a true diversity and inclusive policies across the whole spectrum of our operations will not only grow Infinite Talents Foundation but will also enable us to attract and promote talents, and to fulfil part of our vision of integration.
                                 Because diversity and inclusion is at the heart of ITF, our policies embrace differences, creates possibilities and a platform for all involved to progress together. Equal opportunities will be given to all participants regardless of gender, religion or belief.
-
+    
                                 </p>
                             </div>
                         </div>
-
+    
                         <div className="col s12 m4">
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">group</i></h2>
                                 <h5 className="center">Our Purpose, Values & Principles</h5>
-
+    
                                 <p className="light">We believe that for Infinite Talents Foundation to succeed, we must make a positive impact in society by addressing the challenges faced by local communities in Nigeria. We hope to achieve this by promoting innovation, creativity and arts and culture. We will strive to improve the livelihood of those living in our local communities with the hope that this might reduce rural-urban migration.
                                 We aspire to cultivate a good relationship with the communities, individuals and any organisation we interact with.
                                 At the heart of Infinite Talents Foundation is respect towards our employees, volunteers, communities, individuals and organisations we interact with. To serve everyone we liase with honourably and with integrity and commitment.
-</p>
+    </p>
                             </div>
                         </div>
-
+    
                         <div className="col s12 m4">
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">settings</i></h2>
                                 <h5 className="center">Innovation</h5>
-
+    
                                 <p className="light">Innovation is at the heart of ITF. We are aware that local communities might not be endowed with modern technological prowess that is why we believe that inspiring our youths to have a creative mindset will one day produce young talents with ground breaking innovations. It is the intention of ITF to source these talents and promote them in such a way that would cause a snow ball effect. In the sense that, other youths in the community will aspire to be like those who have been successful or to emulate them.</p>
                             </div>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
-
+    
             <div className="parallax-container valign-wrapper">
                 <div className="section no-pad-bot">
                     <div className="container">
@@ -96,7 +102,7 @@ export default function About() {
                 </div>
                 <div className="parallax"><img src={lady_on_pixel_dust} alt="Unsplashed background img 2" /></div>
             </div>
-
+    
             <div className="container">
                 <div className="section">
                     <div className="row">
@@ -118,4 +124,7 @@ export default function About() {
             </div>
         </>
     )
-}
+
+})
+
+export default AboutParallax

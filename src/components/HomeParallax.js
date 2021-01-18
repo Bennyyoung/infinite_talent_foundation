@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import light_bulb from '../images/light_bulb.jpg'
 import red_woman from "../images/red_woman.jpg"
 import architectural_design from "../images/architectural_design.jpeg"
 import ancient_bicycle from "../images/ancient_bicycle.jpg"
+import M from "materialize-css"
 
+const HomeParallax = () => {
+    useEffect(() => {
+        let elements = document.querySelector(".parallax");
+        M.Parallax.init(elements)
+    }, [])
 
-export default function Home() {
     return (
         <div>
             <div id="index-banner" class="parallax-container">
                 <div className="section no-pad-bot">
-                    <div class="container">
+                    <div className="container">
                         <br /><br />
                         <h1 className="header center teal-text text-lighten-2">Infinite Talents Foundation</h1>
                         <div className="row center">
@@ -21,13 +26,13 @@ export default function Home() {
                             <Link to="/contact" id="download-button" className="btn-large waves-effect waves-light teal lighten-1">Get Started</Link>
                         </div>
                         <br /><br />
-
+    
                     </div>
                 </div>
                 <div className="parallax"><img src={light_bulb} alt="Unsplashed background img 1" /></div>
             </div>
-
-
+    
+    
             <div className="container">
                 <div className="section">
                     <div className="row">
@@ -35,28 +40,28 @@ export default function Home() {
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">flash_on</i></h2>
                                 <h5 className="center">Our Objective</h5>
-
+    
                                 <p className="light">To inspire and motivate creativity, entrepreneurship and leadership among youths and young adults.
                                 </p>
                             </div>
                         </div>
-
+    
                         <div className="col s12 m6">
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">group</i></h2>
                                 <h5 className="center">Our Vision</h5>
-
+    
                                 <p className="light">To create a dependable platform that will inspire innovation and creativity as well as to promote entrepreneurship, poverty alleviation, job creation and integration through events, Workshops, Trainings, Conferences and any other relevant medium.</p>
                             </div>
                         </div>
-
+    
                         
                     </div>
-
+    
                 </div>
             </div>
-
-
+    
+    
             <div className="parallax-container valign-wrapper">
                 <div className="section no-pad-bot">
                     <div className="container">
@@ -67,10 +72,10 @@ export default function Home() {
                 </div>
                 <div className="parallax"><img src={red_woman} alt="Unsplashed background img 2" /></div>
             </div>
-
+    
             <div className="container">
                 <div className="section">
-
+    
                     <div className="row">
                         <div className="col s12 center">
                             <h3><i className="mdi-content-send brown-text"></i></h3>
@@ -78,11 +83,11 @@ export default function Home() {
                             <p className="left-align light">Youths and young adults in our communities are invited to create inventions that will help solve problems in their homes, schools or communities using local resources. Infinite Talents Challenge seeks to foster critical 21st century skills and attitudes, like creativity and innovation, optimism and empathy, and the willingness to experiment and take risks.</p>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
-
-
+    
+    
             <div className="parallax-container valign-wrapper">
                 <div className="section no-pad-bot">
                     <div className="container">
@@ -93,71 +98,71 @@ export default function Home() {
                 </div>
                 <div className="parallax"><img src={architectural_design} alt="Unsplashed background img 3" /></div>
             </div>
-
-
+    
+    
             <div className="container">
                 <div className="section">
-
+    
                     <div className="row">
                         <div className="col s12 center">
                             <h3><i className="mdi-content-send brown-text"></i></h3>
                             <h4>FIVE COMPONENTS OF THE CREATIVE JOURNEY</h4>
                         </div>
-
+    
                         <div className="col s12 m4">
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">lightbulb_outline</i></h2>
                                 <h5 className="center">IMAGINATION</h5>
-
+    
                                 <p className="light">You start with imagination, think of new possibilities and explore wild ideas – the sky is the limit. This is a time and place to embrace various ideas and approach things with conviction and an attitude of optimism.</p>
                             </div>
                         </div>
-
+    
                         <div className="col s12 m4">
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">group</i></h2>
                                 <h5 className="center">IDEAS & DRIVE </h5>
-
+    
                                 <p className="light">We all have various ideas through our imagination and an innate, biologically determined urge to attain a goal or satisfy a need. So as a creator/inventor you have to believe that there is a solution to your problem or your need and that you are going to find it.</p>
                             </div>
                         </div>
-
+    
                         <div className="col s12 m4">
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">settings</i></h2>
                                 <h5 className="center">INSPIRATION</h5>
-
+    
                                 <p className="light">With your imagination and ideas intact, you will be inspired to take action, to start looking for ways to build your ideas. It’s the spark that moves us to explore and act, to find out more, to create something</p>
                             </div>
                         </div>
-
+    
                     </div>
-
+    
                     <div className="row">
                         <div className="col s12 center">
                             <div className="col s12 m4">
                                 <div className="icon-block">
                                     <h2 className="center brown-text"><i className="material-icons">build</i></h2>
                                     <h5 className="center">BUILD</h5>
-
+    
                                     <p className="light">Time to make your idea real. Here you use the necessary resources to achieve your goal. If you are an artist, here is when you bring your emotions and feelings into play to display your artistry.</p>
                                 </div>
                             </div>
-
+    
                             <div className="col s12 m4">
                                 <div className="icon-block">
                                     <h2 className="center brown-text"><i className="material-icons">share</i></h2>
                                     <h5 className="center">SHARE</h5>
-
+    
                                     <p className="light">Share what you have made in a meaningful public context. Tell your story. Let your work affect and inspire others</p>
                                 </div>
                             </div>
-
+    
                         </div>
                     </div>
                 </div>
             </div>
-
+    
             <div className="parallax-container valign-wrapper">
                 <div className="section no-pad-bot">
                     <div className="container">
@@ -168,10 +173,10 @@ export default function Home() {
                 </div>
                 <div className="parallax"><img src={ancient_bicycle} alt="Unsplashed background img 3" /></div>
             </div>
-
+    
             <div className="container">
                 <div className="section">
-
+    
                     <div className="row">
                         <div className="col s12 center">
                             <h3><i className="mdi-content-send brown-text"></i></h3>
@@ -184,12 +189,14 @@ export default function Home() {
                             These deep seated beliefs in me, that everyone has talent and that together we can create the world we want has been the driving force behind the creation of Infinite Talents Foundation (ITF). ITF was borne of a desire to improve the livelihood of youths and young adults living in rural communities. This we intend to do by focussing on our strategy as detailed in “our strategy” section.
                             As we proceed, we are determined to be a dependable Foundation with the aim to model and shape the mindset of our youths and young adults, so that they can achieve beyond their wildest dreams if they apply their talents and resilience.
                             It is with great pleasure that I encourage you to not only give us an opportunity, also to collaborate with us and add value to the lives of our youths and young adults by creating a platform for them to display their creative and innovative flair. – Wari Ellis-Dokubo.
-</p>
+    </p>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
         </div>
     )
 }
+
+export default HomeParallax
