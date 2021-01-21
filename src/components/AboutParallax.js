@@ -1,17 +1,35 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import hands_people_woman_working from "../images/hands-people-woman-working.jpg"
 import lady_painting from '../images/lady_painting.jpeg' 
 import lady_on_pixel_dust from "../images/lady_on_pixel_dust.jpeg"
 import M from "materialize-css"
 
 const AboutParallax = (() => {
+    const [readMore, setReadMore] = useState(false);
+
     useEffect(() => {
         let elements = document.querySelectorAll('.parallax')
         M.Parallax.init(elements)
     }, [])
+
+    const diversity_text = <p className="light">
+        Because diversity and inclusion is at the heart of ITF, our policies embrace differences, creates possibilities and a platform for all involved to progress together. Equal opportunities will be given to all participants regardless of gender, religion or belief.
+    </p>
+
+    const purpose_text = <p className="light">
+         We hope to achieve this by promoting innovation, creativity and arts and culture. We will strive to improve the livelihood of those living in our local communities with the hope that this might reduce rural-urban migration. We aspire to cultivate a good relationship with the communities, individuals and any organisation we interact with. At the heart of Infinite Talents Foundation is respect towards our employees, volunteers, communities, individuals and organisations we interact with. To serve everyone we liase with honourably and with integrity and commitment.
+    </p>
+
+    const innovation_text = <p className="light">
+        It is the intention of ITF to source these talents and promote them in such a way that would cause a snow ball effect. In the sense that, other youths in the community will aspire to be like those who have been successful or to emulate them.
+    </p>
+
+    const diversity_linkName = readMore ? 'Read Less << ':'Read More >>'
+    const purpose_linkName = readMore ? 'Read Less << ':'Read More >>'
+    const innovation_linkName = readMore ? 'Read Less << ':'Read More >>'
     
     return (
-        <>
+        <p>
             <div id="index-banner" class="parallax-container">
                 <div className="section no-pad-bot">
                     <div class="container">
@@ -61,7 +79,10 @@ const AboutParallax = (() => {
                                 <h5 className="center">Diversity & Inclusion</h5>
     
                                 <p className="light">Implementing a true diversity and inclusive policies across the whole spectrum of our operations will not only grow Infinite Talents Foundation but will also enable us to attract and promote talents, and to fulfil part of our vision of integration.
-                                Because diversity and inclusion is at the heart of ITF, our policies embrace differences, creates possibilities and a platform for all involved to progress together. Equal opportunities will be given to all participants regardless of gender, religion or belief.
+                                
+                                <a style={{color: 'teal', fontWeight: 'bold', textDecoration: 'none', cursor: 'pointer'}} onClick={()=>{setReadMore(!readMore)}}>{diversity_linkName}</a>
+                                {readMore && diversity_text}
+                                
     
                                 </p>
                             </div>
@@ -72,9 +93,11 @@ const AboutParallax = (() => {
                                 <h2 className="center brown-text"><i className="material-icons">group</i></h2>
                                 <h5 className="center">Our Purpose, Values & Principles</h5>
     
-                                <p className="light">We believe that for Infinite Talents Foundation to succeed, we must make a positive impact in society by addressing the challenges faced by local communities in Nigeria. We hope to achieve this by promoting innovation, creativity and arts and culture. We will strive to improve the livelihood of those living in our local communities with the hope that this might reduce rural-urban migration.
-                                We aspire to cultivate a good relationship with the communities, individuals and any organisation we interact with.
-                                At the heart of Infinite Talents Foundation is respect towards our employees, volunteers, communities, individuals and organisations we interact with. To serve everyone we liase with honourably and with integrity and commitment.
+                                <p className="light">We believe that for Infinite Talents Foundation to succeed, we must make a positive impact in society by addressing the challenges faced by local communities in Nigeria. 
+                                
+                                <a style={{color: 'teal', fontWeight: 'bold', textDecoration: 'none', cursor: 'pointer'}} onClick={()=>{setReadMore(!readMore)}}>{purpose_linkName}</a>
+                                {readMore && purpose_text}
+                               
     </p>
                             </div>
                         </div>
@@ -84,7 +107,11 @@ const AboutParallax = (() => {
                                 <h2 className="center brown-text"><i className="material-icons">settings</i></h2>
                                 <h5 className="center">Innovation</h5>
     
-                                <p className="light">Innovation is at the heart of ITF. We are aware that local communities might not be endowed with modern technological prowess that is why we believe that inspiring our youths to have a creative mindset will one day produce young talents with ground breaking innovations. It is the intention of ITF to source these talents and promote them in such a way that would cause a snow ball effect. In the sense that, other youths in the community will aspire to be like those who have been successful or to emulate them.</p>
+                                <p className="light">Innovation is at the heart of ITF. We are aware that local communities might not be endowed with modern technological prowess that is why we believe that inspiring our youths to have a creative mindset will one day produce young talents with ground breaking innovations. 
+                                
+                                <a style={{color: 'teal', fontWeight: 'bold', textDecoration: 'none', cursor: 'pointer'}} onClick={()=>{setReadMore(!readMore)}}>{innovation_linkName}</a>
+                            {readMore && innovation_text}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -122,7 +149,7 @@ const AboutParallax = (() => {
                     </div>
                 </div>
             </div>
-        </>
+        </p>
     )
 
 })

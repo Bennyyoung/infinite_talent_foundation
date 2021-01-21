@@ -196,53 +196,6 @@ const AboutEventParallax = (() => {
                     </div>
                 </div>
             </div>
-
-            {/* <div className="container">
-                <div className="section">
-                    <div className="row">
-                        <div className="col s12 center">
-                            <h3><i className="mdi-content-send brown-text"></i></h3>
-                            <h4>Join The Global Movement</h4>
-                            <p className="left-align light">Help us inspire others and build the movement to foster creativity and entrepreneurship in young African around the world!<br /> <br />
-
-                            <h4>Participate in the Inventor's Challenge</h4>
-                            We designed the Inventor’s Challenge to provide an opportunity for young African, both in and outside of school, to engage in a creative process that both fosters 21st century skills and is rewarding and fun.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
-            <div className="parallax-container valign-wrapper">
-                <div className="section no-pad-bot">
-                    <div className="container">
-                        <div className="row center">
-                            <h5 className="header col s12 light">Create</h5>
-                        </div>
-                    </div>
-                </div>
-                <div className="parallax"><img src={books} alt="lady standing painting" /></div>
-            </div>
-
-
-            <div className="container">
-                <div className="section">
-                    <div className="row">
-                        <div className="col s12 center">
-                            <h3><i className="mdi-content-send brown-text"></i></h3>
-                            <h4>Our Strategy</h4>
-                            <p className="left-align light">Our strategy is to continuously create awareness of the fact that everyone has the ability to be creative in whatever capacity possible and to help support viable ventures by seeking funding for such. ITF’s purpose is to promote innovation, creativity and arts and culture.
-                            Therefore, our strategy will be:
-                            <ul>
-                                    <li>• To organise periodic events for individuals or groups to showcase their creative flair.</li>
-                                    <li>• To give necessary support for new businesses under the umbrella of Infinite Talents Foundation</li>
-                                    <li>• To do social events that bother on improving the creative mindset of the communities we interact with.</li>
-                                </ul>
-                            Challenging though this might look, however ITF is determined to make a positive impact on Nigeria’s youths and young adults in our local communities. We will achieve this by consistently improving the quality of our practice; increasing trust with the communities and maintaining a good relationship with all parties we interact with.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </>
     )
 

@@ -1,16 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import lady_on_keyboard from "../images/lady_on_keyboard.jpg"
 import man_with_macbook from "../images/man_with_macbook.jpeg"
 import M from "materialize-css"
 
 const ContactParallax = (() => {
+    const [readMore, setReadMore] = useState(false);
     useEffect(() => {
         let elements = document.querySelectorAll(".parallax");
         M.Parallax.init(elements)
     }, [])
 
+    const extraContent = <p className="left-align light">
+        <p>7.	Participants must submit their entry form no later than 12pm on January……, 2020 to a member of Infinite Talent Foundation at the designated address and obtain a receipt from the member or contact us through Infinitetalntfoundation@gmail.com. </p>
+                                <p>8.	Entry to this Talent Show is free; participants are not to pay any fee. </p>
+                                <p>9.	Participants must arrive to the talent show located at the designated address no later than 11am on January……… </p>
+                                <p>10.  Participants must perform acts inside their scope of abilities as ITF will not accept risks of injury. </p>
+                                <p>11.	Winners will be chosen based on average score composed by judges. Presentations and acts will be judged based on creativity, innovation, quality, and stage presence.  All judges are final and the winners will be notified accordingly. </p>
+                                <p>12.	To avoid copyright issues presentations are expected to be original. </p>
+    </p>
+
+const linkName = readMore ?  'Read Less << ':'Read More >>'
+
     return (
-        <>
+        <p>
             <div id="index-banner" class="parallax-container">
                 <div className="section no-pad-bot">
                     <div class="container">
@@ -158,12 +170,10 @@ const ContactParallax = (() => {
                                 </p>
                                 <p>5.	Sound technician and microphone will be provided. For musical acts, you must provide your own CD music, instruments, props, keyboard, etc. if needed. (that is if we are on live show) </p>
                                 <p>6.	Vocalists may use recorded accompaniment tracks with vocal background.  Lip singing is not allowed. </p>
-                                <p>7.	Participants must submit their entry form no later than 12pm on January……, 2020 to a member of Infinite Talent Foundation at the designated address and obtain a receipt from the member or contact us through Infinitetalntfoundation@gmail.com. </p>
-                                <p>8.	Entry to this Talent Show is free; participants are not to pay any fee. </p>
-                                <p>9.	Participants must arrive to the talent show located at the designated address no later than 11am on January……… </p>
-                                <p>10.  Participants must perform acts inside their scope of abilities as ITF will not accept risks of injury. </p>
-                                <p>11.	Winners will be chosen based on average score composed by judges. Presentations and acts will be judged based on creativity, innovation, quality, and stage presence.  All judges are final and the winners will be notified accordingly. </p>
-                                <p>12.	To avoid copyright issues presentations are expected to be original. </p>
+
+                                <a style={{color: 'teal', fontWeight: 'bold', textDecoration: 'none', cursor: 'pointer'}} onClick={()=>{setReadMore(!readMore)}}>{linkName}</a>
+                                {readMore && extraContent}
+                                
                             </div>
                         </div>
                     </div>
@@ -207,7 +217,7 @@ const ContactParallax = (() => {
                     <a href="#" className="left-align light" style={{ color: 'black' }}><i className="material-icons">home</i>202 ABA Express way PortHarcourt</a>
                 </div>
             </div>
-        </>
+        </p>
     )
 })
 
