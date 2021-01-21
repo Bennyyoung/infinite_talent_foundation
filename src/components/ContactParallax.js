@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import lady_on_keyboard from "../images/lady_on_keyboard.jpg"
-import boy_with_violin from '../images/boy_with_violin.jpeg'
+import man_with_macbook from "../images/man_with_macbook.jpeg"
 import M from "materialize-css"
 
 const ContactParallax = (() => {
@@ -25,10 +25,40 @@ const ContactParallax = (() => {
                 </div>
                 <div className="parallax"><img src={lady_on_keyboard} alt="Unsplashed background img 1" /></div>
             </div>
+
+            <div className="container">
+                <div className="section">
+                    <div className="row">
+                        <div className="col s12 center">
+                            <h3><i className="mdi-content-send brown-text"></i></h3>
+                            <h4>HOW TO PARTICIPATE</h4>
+                            <div className="left-align light">
+                                <p>1. Find a problem you want to solve you in your community, home or school</p>
+                                <p>2. Invent something to solve it it could be Physical or Digital</p>
+                                <p>3. Make a video sharing your invention to the world</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="section">
+                    <div className="row">
+                        <div className="col s12 center">
+                            <h3><i className="mdi-content-send brown-text"></i></h3>
+                            <h4>APPLICATION FORM</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
             <div className="row" style={{ alignItems: 'center' }}>
                 <form
                     name="contact-form"
                     method="post"
+                    netlify
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     action="/thank-you"
@@ -92,7 +122,7 @@ const ContactParallax = (() => {
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">sentiment_very_satisfied</i>
-                            <textarea placeholder="Textareas will auto resize to the text inside." id="intereseting_fact" className="materialize-textarea"></textarea>
+                            <textarea placeholder="Textareas will auto resize to the text inside." id="interesting_fact" className="materialize-textarea"></textarea>
                             <label for="interesting_fact">Unusual/Interesting facts about performance: </label>
                         </div>
                     </div>
@@ -162,7 +192,7 @@ const ContactParallax = (() => {
                         </div>
                     </div>
                 </div>
-                <div className="parallax"><img src={boy_with_violin} alt="Unsplashed background img 3" /></div>
+                <div className="parallax"><img src={man_with_macbook} alt="Unsplashed background img 3" /></div>
             </div>
     
             <div className="row">

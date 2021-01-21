@@ -8,8 +8,9 @@ export default function Footer() {
                 <div className="container">
                     <div className="row">
                         <div className="col l6 s12">
-                            <h5 className="white-text">ABOUT OUR EVENT</h5>
-                            <p className="grey-text text-lighten-4">The event is a one-day event designed to bring together youths and young adults from various communities to showcase their creative ingenuity. Groups of communities will be chosen to participate at any one time because of the number of communities we have to cover. If your community is not mentioned, please be patient with us. We intend to reach all the communities in the Local Government Areas in Nigeria so be rest assured that we will come to your community.  </p>
+                            <h5 className="white-text">Our founder</h5>
+                            <p className="grey-text text-lighten-4">It all started with one woman's spirit fueled by creativity, a passion for problem and the believe that inventing is essential to social and economic progress.
+In 2018, wali founded the Infinite Talent Foundation to inspire a new generation of inventors to create products to change our world for better.  </p>
 
 
                         </div>
@@ -21,8 +22,8 @@ export default function Footer() {
                                 <li><a href="#" className="white-text">Twitter</a></li>
                             </ul>
                         </div>
-                        <div class="col l3 s12">
-                            <h5 class="white-text">Others</h5>
+                        <div className="col l3 s12">
+                            <h5 className="white-text">Others</h5>
                             <ul>
                                 <li><Link to="/" className="white-text">HOME</Link></li>
                                 <li><Link to="about-us" className="white-text">ABOUT</Link></li>

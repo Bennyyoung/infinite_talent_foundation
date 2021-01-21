@@ -14,13 +14,22 @@ const HomeParallax = () => {
 
     return (
         <div>
-            <div id="index-banner" class="parallax-container">
+            <div id="index-banner" className="parallax-container">
                 <div className="section no-pad-bot">
                     <div className="container">
+                        <h1 className="header center light text-lighten-2">Infinite Talents Foundation</h1>
                         <br /><br />
-                        <h1 className="header center teal-text text-lighten-2">Infinite Talents Foundation</h1>
                         <div className="row center">
-                            <h5 className="header col s12 light">Seeking Talents From Local Government Areas</h5>
+                            <h4 className="header col s12 teal-text">
+                                <b>Join The Global Movement</b>
+                            </h4>
+                            <h6 className="header col s12 teal-text">
+                                Help us inspire others and build the<br />
+                                movement to foster creativity an<br />
+                                and entrepreneurship in young African around the<br />
+                                world!<br />
+
+                            </h6>
                         </div>
                         <div className="row center">
                             <Link to="/contact" id="download-button" className="btn-large waves-effect waves-light teal lighten-1">Get Started</Link>
@@ -39,7 +48,7 @@ const HomeParallax = () => {
                         <div className="col s12 m6">
                             <div className="icon-block">
                                 <h2 className="center brown-text"><i className="material-icons">flash_on</i></h2>
-                                <h5 className="center">Our Objective</h5>
+                                <h5 className="center">Our Mission</h5>
     
                                 <p className="light">To inspire and motivate creativity, entrepreneurship and leadership among youths and young adults.
                                 </p>
@@ -102,7 +111,6 @@ const HomeParallax = () => {
     
             <div className="container">
                 <div className="section">
-    
                     <div className="row">
                         <div className="col s12 center">
                             <h3><i className="mdi-content-send brown-text"></i></h3>

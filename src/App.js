@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import ContactParallax from './components/ContactParallax'
 import AboutParallax from './components/AboutParallax'
 import NotFoundPage from './components/NotFoundPage'
+import AboutEventParallax from './components/AboutEventParallax';
+
 
 
 function App() {
@@ -15,8 +17,10 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomeParallax}></Route>
-        <Route exact path="/about-us" component={AboutParallax}></Route>
-        <Route exact path="/contact" component={ContactParallax}></Route>
+        <Route path="/about-us" component={AboutParallax}></Route>
+        <Route path="/contact" component={ContactParallax}></Route>
+        <Route path="/event" component={AboutEventParallax}></Route>
+
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />
