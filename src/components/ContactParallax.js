@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import lady_on_keyboard from "../images/lady_on_keyboard.jpg"
 import man_with_macbook from "../images/man_with_macbook.jpeg"
 import M from "materialize-css"
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
+
 
 const ContactParallax = (() => {
     const [readMore, setReadMore] = useState(false);
@@ -79,7 +82,7 @@ const linkName = readMore ?  'Read Less << ':'Read More >>'
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">account_circle</i>
-                            <input id="first_name" type="text" className="validate" />
+                            <input id="first_name" type="text" className="validate" required/>
                             <label for="first_name">Name (if group, please provide group name and members): </label><br />
                         </div>
                     </div>
@@ -87,7 +90,8 @@ const linkName = readMore ?  'Read Less << ':'Read More >>'
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">date_range</i>
-                            <input placeholder="DD/MM/YYYY" id="date" type="text" className="datepicker" />
+                            <input placeholder="DD/MM/YYYY" id="date" type="date" className="datepicker" required/>
+
                             <label for="date">Birthdate(s): </label>
                         </div>
                     </div>
@@ -95,7 +99,7 @@ const linkName = readMore ?  'Read Less << ':'Read More >>'
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">home</i>
-                            <input id="icon_address" type="text" className="validate" />
+                            <input id="icon_address" type="text" className="validate" required/>
                             <label for="icon_address">Address(es): </label>
                         </div>
                     </div>
@@ -103,14 +107,14 @@ const linkName = readMore ?  'Read Less << ':'Read More >>'
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">phone</i>
-                            <input id="icon_telophone" type="tel" className="validate" />
+                            <input id="icon_telephone" type="tel" className="validate" required/>
                             <label for="icon_telephone">Telephone</label>
                         </div>
                     </div>
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">email</i>
-                            <input id="icon_email" type="email" className="validate" />
+                            <input id="icon_email" type="email" className="validate" required/>
                             <label for="icon_email">Email</label>
                         </div>
                     </div>
@@ -118,7 +122,7 @@ const linkName = readMore ?  'Read Less << ':'Read More >>'
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">lightbulb_outline</i>
-                            <textarea placeholder="Textareas will auto resize to the text inside." id="textarea" className="materialize-textarea"></textarea>
+                            <textarea placeholder="Textareas will auto resize to the text inside." id="textarea" className="materialize-textarea" required></textarea>
                             <label for="textarea">Talent Description: Describe your idea in the box below. Include brief plans on how your idea can be put into action.</label>
                         </div>
                     </div>
@@ -126,7 +130,7 @@ const linkName = readMore ?  'Read Less << ':'Read More >>'
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">music_note</i>
-                            <input id="icon_music" type="text" className="validate" />
+                            <input id="icon_music" type="text" className="validate" required/>
                             <label for="icon_music">Song Performing: </label>
                         </div>
                     </div>
@@ -134,11 +138,11 @@ const linkName = readMore ?  'Read Less << ':'Read More >>'
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix">sentiment_very_satisfied</i>
-                            <textarea placeholder="Textareas will auto resize to the text inside." id="interesting_fact" className="materialize-textarea"></textarea>
+                            <textarea placeholder="Textareas will auto resize to the text inside." id="interesting_fact" className="materialize-textarea" required></textarea>
                             <label for="interesting_fact">Unusual/Interesting facts about performance: </label>
                         </div>
                     </div>
-                    <button style={{backgroundColor: 'teal', color: 'white', padding: '10px', borderRadius: '5px'}} type="submit">Submit</button>
+                    <input type="submit" value="Submit" className="btn-large waves-effect waves-light teal lighten-1" />
                 </form>
     
             </div>
