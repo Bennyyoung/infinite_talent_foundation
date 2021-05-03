@@ -8,6 +8,7 @@ import ContactParallax from './components/ContactParallax'
 import AboutParallax from './components/AboutParallax'
 import NotFoundPage from './components/NotFoundPage'
 import AboutEventParallax from './components/AboutEventParallax';
+import MeetTheTeam from './components/MeetTheTeam';
 import ThankYou from './components/ThankYou';
 
 
@@ -21,6 +22,8 @@ function App() {
     <Route path="/about-us" component={AboutParallax}></Route>
     <Route path="/contact" component={ContactParallax}></Route>
     <Route path="/event" component={AboutEventParallax}></Route>
+    <Route path="/team" component={MeetTheTeam}></Route>
+
     <Route path="/thank-you" component={ThankYou}></Route>
 
 
