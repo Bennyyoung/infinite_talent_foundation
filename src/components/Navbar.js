@@ -12,21 +12,21 @@ export default function Navbar() {
       <Link to="/" id="logo-container" className="brand-logo"><img height="61px" width="80px" src={Logo} alt="brand logo" /></Link>
 
       <ul className="right hide-on-med-and-down">
-       <li><NavLink exact to="/" activeStyle={{ color: 'green' }}>HOME</NavLink></li>
-       <li><NavLink to="/about-us" activeStyle={{ color: 'green' }}>ABOUT US</NavLink></li>
-       <li><NavLink to="/event" activeStyle={{ color: 'green' }}>OUR EVENT</NavLink></li>
-       <li><NavLink to="/team" activeStyle={{ color: 'green' }}>MEET THE TEAM</NavLink></li>
+       <li><Link exact to="/">HOME</Link></li>
+       <li><Link to="/about-us">ABOUT US</Link></li>
+       <li><Link to="/event">OUR EVENT</Link></li>
+       <li><Link to="/team">MEET THE TEAM</Link></li>
 
-       <li><NavLink to="/contact" activeStyle={{ color: 'green' }}>APPLY</NavLink></li>
+       <li><Link to="/contact">APPLY</Link></li>
       </ul>
 
       <ul id="nav-mobile" className="sidenav">
-       <li><NavLink exact to="/" activeStyle={{ color: 'green' }}>HOME</NavLink></li>
-       <li><NavLink to="/about-us" activeStyle={{ color: 'green' }}>ABOUT</NavLink></li>
-       <li><NavLink to="/event" activeStyle={{ color: 'green' }}>OUR EVENT</NavLink></li>
-       <li><NavLink to="/team" activeStyle={{ color: 'green' }}>MEET THE TEAM</NavLink></li>
+       <li><NavLink exact to="/">HOME</NavLink></li>
+       <li><Link to="/about-us">ABOUT</Link></li>
+       <li><Link to="/event">OUR EVENT</Link></li>
+       <li><Link to="/team">MEET THE TEAM</Link></li>
 
-       <li><NavLink to="/contact" activeStyle={{ color: 'green' }}>APPLY</NavLink></li>
+       <li><Link to="/contact">APPLY</Link></li>
       </ul>
 
       <Link to="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
