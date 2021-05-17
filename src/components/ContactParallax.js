@@ -152,7 +152,7 @@ const ContactParallax = (() => {
      <div className="row">
       <div className="input-field col s12">
        <i className="material-icons prefix">lightbulb_outline</i>
-       <textarea placeholder="Textareas will auto resize to the text inside." id="textarea" className="materialize-textarea" name="Message" onChange={handleChange} required></textarea>
+       <textarea id="textarea" className="materialize-textarea" name="Message" onChange={handleChange} required></textarea>
        <label for="textarea">Talent Description: Describe your idea in the box below. Include brief plans on how your idea can be put into action.</label>
       </div>
      </div>
@@ -168,7 +168,7 @@ const ContactParallax = (() => {
      <div className="row">
       <div className="input-field col s12">
        <i className="material-icons prefix">sentiment_very_satisfied</i>
-       <textarea name="Interesting facts about Performance" onChange={handleChange} placeholder="Textareas will auto resize to the text inside." id="interesting_fact" className="materialize-textarea" required></textarea>
+       <textarea name="Interesting facts about Performance" onChange={handleChange} id="interesting_fact" className="materialize-textarea" required></textarea>
        <label for="interesting_fact">Unusual/Interesting facts about performance: </label>
       </div>
      </div>
