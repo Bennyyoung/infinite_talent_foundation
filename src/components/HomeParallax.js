@@ -32,21 +32,15 @@ const linkName = readMore ?' Read Less ':' Read More'
             <div id="index-banner" className="parallax-container">
                 <div className="section no-pad-bot">
                     <div className="container">
-                        <h1 className="header center light text-lighten-2">Infinite Talents Foundation</h1>
+                        <h3 className="header center light text-lighten-2">Infinite Talents Foundation</h3>
                         <br /><br />
                         <div className="row center">
                             <h4 className="header col s12 teal-text">
                                 <b>Join The Global Movement</b>
                             </h4>
-                            {/* <h6 className="header col s12 teal-text">
-                                Help us inspire others and build the<br />
-                                movement to foster creativity an<br />
-                                and entrepreneurship in young African around the<br />
-                                world!<br />
-                            </h6> */}
+                        <div className="row center" >
+                            <Link to="/contact" style={{justifyContent: 'center'}} id="download-button" className="btn-large waves-effect waves-light teal lighten-1">Get Started</Link>
                         </div>
-                        <div className="row center">
-                            <Link to="/contact" id="download-button" className="btn-large waves-effect waves-light teal lighten-1">Get Started</Link>
                         </div>
                         <br /><br />
     

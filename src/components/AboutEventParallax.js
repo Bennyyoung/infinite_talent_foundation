@@ -63,8 +63,8 @@ const AboutEventParallax = (() => {
        <h4>WHAT IS THE INVENTORS CHALLENGE</h4>
        <p className="left-align light">Africans around the world are invited to create inventions that will help solve problems in their homes, schools of communities using whatever tools and materials are available. The Inventor's Challenge fosters critical 21st century skills and attitudes, like creativity and innovation, optimism and empathy, and the willingness to experiment and take risks.<br /><br />
 
-                            The Inventor’s Journey begins with inspiration and culminates in the sharing of an original artifact made by children using whatever tools and materials are available.
-                            </p>
+      Youth and young adults in our communities are invited to create things that will help solve problems in their homes, schools or communities using whatever tools are available. The Inventor's Challenge fosters critical 21st century skills and attitudes, like creativity and innovation and empathy, and the willingness to experiment and take risks.
+       </p>
       </div>
      </div>
     </div>
@@ -86,10 +86,10 @@ const AboutEventParallax = (() => {
      <div className="row">
       <div className="col s12 center">
        <h3><i className="mdi-content-send brown-text"></i></h3>
-       <h4>About African Inventors Tech Expo '21</h4>
-       <p className="left-align light">The African  Inventors Tech Expo 2021 is a one-day event designed to bring together young inventors from various communities  across the Africa to showcase their tech ingenuity and inventions to the public under the Young Inventors Tech Expo Platform while wining prizes from our sponsors.<br /> <br />
-
- At the African Inventors Tech Expo 2021, our young ones drawn from 6 communities in ASALGA Local Government in Rivers state and  around the country and participants of our one-month African Inventors Summer Camp 2021 will showcase and exhibit tech projects, tech solutions and their original inventions. They will also have the opportunity to tell the audience how they built their innovations and what inspired them.</p>
+       <h4>About Infinite Talents Inventors Challenge '21</h4>
+       <p className="left-align light">The Infinite Talents Challenge 2021 is a one-day event designed to bring together young inventors from various communities  across the Africa to showcase their tech ingenuity to the public and in so doing, win various prizes.<br /> <br />
+       
+       At the event, our young ones drawn from 6 communities in ASALGA Local Government in Rivers State, will showcase and exhibit thier inventions or innovations or arts. They will also have the opportunity to share their creative process and what inspired them with the audience.</p>
       </div>
      </div>
     </div>
@@ -186,10 +186,10 @@ const AboutEventParallax = (() => {
       <div className="col s12 center">
        <h3><i className="mdi-content-send brown-text"></i></h3>
        <h4>Join The Global Movement</h4>
-       <p className="left-align light">Help us inspire others and build the movement to foster creativity and entrepreneurship in young African around the world!</p>
+       <p className="left-align light">Help us inspire others and build the movement to foster creativity and entrepreneurship in youths and young adults around the world!</p>
 
        <h4>Participate in the Inventor's Challenge</h4>
-       <p className="left-align light">We designed the Inventor’s Challenge to provide an opportunity for young African, both in and outside of school, to engage in a creative process that both fosters 21st century skills and is rewarding and fun.</p>
+       <p className="left-align light">We designed the Inventor’s Challenge to provide an opportunity for youths and young adults, both in and outside of school, to engage in a creative process that both fosters 21st century skills and is rewarding and fun.</p>
       </div>
      </div>
     </div>

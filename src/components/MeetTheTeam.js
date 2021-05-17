@@ -5,9 +5,9 @@ function MeetTheTeam() {
  return (
   <div className="container">
    <div className="section-title">
-    <h1>Meet The Team</h1>
+    <h1 id="heading">Meet The Team</h1>
    </div>
-   <div className="row">
+   <div id="row">
     <div className="column">
      <div className="team-4">
       <div className="team-content">
@@ -254,7 +254,7 @@ function MeetTheTeam() {
       </div>
       <div className="team-img">
        <img
-        src="https://res.cloudinary.com/bloomhub/image/upload/v1620038320/infintetalentsfoundation/asikiya_gexhho.jpg"
+        src="https://res.cloudinary.com/bloomhub/image/upload/v1620038320/infintetalentsfoundation/asikiya_xjxrpz.jpg"
         alt="Team Image"
        />
        <div className="team-content">

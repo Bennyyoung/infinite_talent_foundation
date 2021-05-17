@@ -26,12 +26,7 @@ p {
  font-weight: 300;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#heading {
  padding: 0;
  margin: 0 0 15px 0;
  color: #333333;
@@ -83,7 +78,7 @@ h1 {
  }
 }
 
-.row {
+#row {
  display: -ms-flexbox;
  display: flex;
  -ms-flex-wrap: wrap;
